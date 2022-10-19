@@ -1,26 +1,128 @@
-html,
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: hsl(209, 47%, 15%);
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   html {
-    color-scheme: dark;
+    font-family: Poppins, system-ui, sans-serif;
   }
-  body {
-    color: white;
-    background: black;
+
+  :root {
+    /* colors */
+    --pri__yellow: 49deg 94% 61%; /* #f9d640 */
+    --base__black: 209deg 47% 15%; /* #142637 */
+    --accent__light: 0deg 0% 100%; /* #ffffff */
+    --accent__light: 0deg 0% 100%; /* #FFFFFF - 70% */
+
+    /* fonts */
+    --fs-xl: clamp(3rem, 1rem + 4.2vw, 4.5rem);
+    --fs-lg: clamp(2rem, 1rem + 3.5vw, 3rem);
+    --fs: clamp(1.3125rem, 0.875rem + 1.5vw, 2rem);
+    --fs-sm: clamp(1rem, 0.7rem + 1vw, 1.5rem);
+    --fs-xs: clamp(0.75rem, 0.5rem + 1vw, 1.2rem);
+  }
+}
+
+@layer components {
+  .b-red {
+    @apply border border-solid border-priYellow;
+  }
+
+  .header-btn {
+    @apply flex items-center justify-center space-x-3 rounded-[50px] text-xSmall;
+    padding-block: clamp(13px, 4vw, 20px);
+    padding-inline: clamp(20px, 5vw, 40px);
+    width: clamp(158px, 40vw, 340px);
+  }
+
+  .container {
+    @apply mx-auto;
+    width: clamp(375px, 90vw, 750px);
+  }
+
+  .image-wrapper {
+    width: clamp(124px, 25vw, 216px);
+  }
+
+  .pri-nav {
+    padding: clamp(7px, 2vw, 20px);
+  }
+
+  .nav-btn {
+    @apply rounded-[40px] text-center text-small text-priYellow hover:bg-black cursor-pointer;
+    padding-block: clamp(15px, 4vw, 22px);
+    width: clamp(158px, 40vw, 300px);
+  }
+
+  .projects__card {
+    @apply bg-white10 text-priYellow p-4 mx-auto relative mt-4;
+    border-radius: clamp(15px, 5vw, 30px);
+    width: max(350px, 80vw);
+    height: max(350px, 70vw);
+  }
+
+  .img-wrapper {
+    @apply relative overflow-hidden mx-auto;
+    border-radius: clamp(15px, 5vw, 30px);
+    width: 100%;
+    height: 100%;
+  }
+
+  .icons {
+    @apply text-priYellow text-normal;
+  }
+
+  .work-history__company {
+    @apply flex items-center justify-start space-x-4 space-y-4;
+  }
+
+  .work-history__company p {
+    @apply text-small;
+  }
+
+  .work-history__company p:first-child {
+    @apply text-priYellow;
+  }
+
+  .work-history__company p:last-child {
+    @apply text-white70;
+  }
+
+  .title__logo {
+    @apply rounded-full w-20 h-20 border-solid border-8 border-white10 mx-auto mb-7 flex items-center justify-center;
+  }
+
+  .section__title {
+    @apply text-large text-white70;
+  }
+
+  .divider {
+    @apply w-40 h-[10px] mx-auto mb-10 bg-white10 rounded-xl;
+  }
+
+  .academics__qualification {
+    @apply flex items-center justify-start space-x-4 space-y-4;
+  }
+  .academics__qualification p {
+    @apply text-small text-white70;
+  }
+
+  .project__img {
+    @apply relative rounded-3xl mt-10 overflow-hidden shadow-[0_0_0_6px_rgba(255,255,255,0.4)] mx-auto;
+    width: clamp(340px, 80vw, 700px);
+    height: clamp(300px, 60vw, 480px);
+  }
+}
+
+@media (min-width: 768px) {
+  .projects__card {
+    width: clamp(350px, 40vw, 360px);
+    height: clamp(350px, 40vw, 360px);
   }
 }
