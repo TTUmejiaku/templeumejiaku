@@ -29,10 +29,8 @@ function ProjectCard({}: Props) {
   });
 
   return (
-    <section className="projects mt-8">
-      <div className="container md:grid md:grid-cols-2 md:gap-6">
-        {projects}
-      </div>
+    <section className="mt-10">
+      <div className="md:grid md:grid-cols-2 md:gap-6">{projects}</div>
     </section>
   );
 }
