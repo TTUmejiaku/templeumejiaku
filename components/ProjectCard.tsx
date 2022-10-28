@@ -21,7 +21,7 @@ function ProjectCard({}: Props) {
           </div>
           <div className="bg-black w-full absolute bottom-8 md:bottom-20 -skew-y-12 p-4">
             <h3>{project.projectTitle}</h3>
-            <p className="text-white">Project info eg {project.projectInfo}</p>
+            <p className="text-white">Technology: {project.projectInfo}</p>
           </div>
         </div>
       </Link>

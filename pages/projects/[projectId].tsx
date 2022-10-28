@@ -27,7 +27,7 @@ function ProjectDetails({}: Props) {
       <div className="mt-10 ">
         <div className="container">
           <Link href="/projects">
-            <div className="flex flex-col items-center justify-center bg-priYellow w-10 h-10 md:w-16 md:h-16 rounded-full mx-auto cursor-pointer">
+            <div className="flex flex-col items-center justify-center bg-priYellow w-10 h-10 md:w-16 md:h-16 rounded-full mx-auto cursor-pointer hover:scale-110">
               <BiLeftArrowAlt className="text-small" />
             </div>
           </Link>
@@ -43,7 +43,7 @@ function ProjectDetails({}: Props) {
           <h2 className="section__title text-priYellow font-bold">
             {projectName}
           </h2>
-          <p className="mb-14">Project info eg {project?.projectInfo}</p>
+          <p className="mb-14">Technology: {project?.projectInfo}</p>
           <p className="mb-10">{project?.projectDescription}</p>
           <a
             href={project?.projectURL}
@@ -69,7 +69,7 @@ function ProjectDetails({}: Props) {
               )}
             </div>
             <div className="absolute bottom-0 bg-black w-full p-5">
-              <p>Optional image caption</p>
+              <p>Desktop View</p>
             </div>
           </div>
         </div>

@@ -19,6 +19,7 @@ body {
     --base__black: 209deg 47% 15%; /* #142637 */
     --accent__light: 0deg 0% 100%; /* #ffffff */
     --accent__light: 0deg 0% 100%; /* #FFFFFF - 70% */
+    --slate: 225deg 20% 61%; /* #8892b0 */
 
     /* fonts */
     --fs-xl: clamp(3rem, 1rem + 4.2vw, 4.5rem);
@@ -42,7 +43,7 @@ body {
   }
 
   .container {
-    @apply mx-auto;
+    @apply mx-auto px-4 md:px-0;
     width: clamp(375px, 90vw, 750px);
   }
 
@@ -78,20 +79,12 @@ body {
     @apply text-priYellow text-normal;
   }
 
-  .work-history__company {
-    @apply flex items-center justify-start space-x-4 space-y-4;
+  .work-history__buttons {
+    @apply flex md:flex-col items-start justify-start w-full md:w-1/3 overflow-x-auto pb-4 mb-8 scrollbar-thin scrollbar-track-white10 scrollbar-thumb-white40 scrollbar-thumb-rounded;
   }
 
-  .work-history__company p {
-    @apply text-small;
-  }
-
-  .work-history__company p:first-child {
-    @apply text-priYellow;
-  }
-
-  .work-history__company p:last-child {
-    @apply text-white70;
+  .work-history__buttons button {
+    @apply flex items-center justify-center md:justify-start px-4 border-solid border-b-2 md:border-l-2 md:h-12 md:border-b-0 text-slate border-white10 focus:border-priYellow text-center min-w-[120px] shrink-0;
   }
 
   .title__logo {
@@ -99,11 +92,11 @@ body {
   }
 
   .section__title {
-    @apply text-large text-white70;
+    @apply text-large text-white70 leading-tight;
   }
 
   .divider {
-    @apply w-40 h-[10px] mx-auto mb-10 bg-white10 rounded-xl;
+    @apply w-40 h-[10px] mx-auto mb-10 mt-2 bg-white10 rounded-xl;
   }
 
   .academics__qualification {
@@ -117,6 +110,10 @@ body {
     @apply relative rounded-3xl mt-10 overflow-hidden shadow-[0_0_0_6px_rgba(255,255,255,0.4)] mx-auto;
     width: clamp(340px, 80vw, 700px);
     height: clamp(300px, 60vw, 480px);
+  }
+
+  .contactInput {
+    @apply outline-none bg-white10 rounded-sm border-b px-6 py-4 border-white10 text-gray-500 placeholder-gray-500 transition-all focus:border-priYellow/60 focus:text-priYellow/60 hover:border-priYellow/60;
   }
 }
 

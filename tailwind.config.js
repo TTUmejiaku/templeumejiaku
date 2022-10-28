@@ -1,4 +1,4 @@
-/** @type {import('tailwindcss').Config} */
+/** @type {import('tailwindcss').Config} **/
 const defaultTheme = require("tailwindcss/defaultTheme");
 
 module.exports = {
@@ -26,11 +26,12 @@ module.exports = {
         white40: "hsl(var(--accent__light) / 40%)",
         white10: "hsl(var(--accent__light) / 10%)",
         accentRed: "hsl(var(accent__red))",
+        slate: "hsl(var(--slate))",
       },
     },
     variants: {
       extend: {},
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")({ nocompatible: true })],
 };
