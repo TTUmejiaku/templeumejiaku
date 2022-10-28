@@ -5,6 +5,7 @@ import profilePic from "../public/Assets/Images/TTUmejiaku-with-white-border.png
 import { AiOutlineDownload } from "react-icons/ai";
 import { FaRegEnvelope } from "react-icons/fa";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
+import Link from "next/link";
 
 type Props = {};
 
@@ -21,9 +22,11 @@ function Header({}: Props) {
         <div className="flex flex-col items-center md:flex-row md:justify-between w-full">
           <div className="">
             {/* Image */}
-            <div className="image-wrapper rounded-full border-[3px] border-solid border-white70 p-2 flex items-center justify-center mx-auto md:mx-0 ">
-              <Image src={profilePic} alt="TTUmejiaku" />
-            </div>
+            <Link href="/">
+              <div className="image-wrapper rounded-full border-[3px] border-solid border-white70 p-2 flex items-center justify-center mx-auto md:mx-0 cursor-pointer">
+                <Image src={profilePic} alt="TTUmejiaku" />
+              </div>
+            </Link>
           </div>
 
           {/* Profile details */}

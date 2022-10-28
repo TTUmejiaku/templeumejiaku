@@ -4,12 +4,16 @@ import {
   TbBrandHtml5,
   TbBrandCss3,
   TbBrandReactNative,
+  TbBrandBootstrap,
+  TbBrandFigma,
 } from "react-icons/tb";
 import {
   SiTypescript,
   SiReact,
   SiTailwindcss,
-  SiReactrouter,
+  SiNetlify,
+  SiRedux,
+  SiFigma,
 } from "react-icons/si";
 import { FaGithub, FaSass } from "react-icons/fa";
 import React from "react";
@@ -75,32 +79,51 @@ export const skillsData = [
   },
   {
     id: 7,
-    brand: FaGithub,
-    directionLeft: false,
-    brandName: "GitHub",
+    brand: SiRedux,
+    directionLeft: true,
+    brandName: "Redux",
   },
   {
     id: 8,
-    brand: SiTailwindcss,
-    directionLeft: false,
-    brandName: "Tailwind-CSS",
-  },
-  {
-    id: 9,
     brand: FaSass,
     directionLeft: false,
     brandName: "SASS",
   },
   {
-    id: 10,
-    brand: SiReactrouter,
+    id: 9,
+
+    brand: SiTailwindcss,
     directionLeft: false,
-    brandName: "React-Router",
+    brandName: "Tailwind-CSS",
+  },
+  {
+    id: 10,
+    brand: TbBrandBootstrap,
+    directionLeft: false,
+    brandName: "Bootstrap",
   },
   {
     id: 11,
     brand: TbBrandReactNative,
     directionLeft: false,
     brandName: "React-Native",
+  },
+  {
+    id: 12,
+    brand: FaGithub,
+    directionLeft: false,
+    brandName: "GitHub",
+  },
+  {
+    id: 13,
+    brand: SiNetlify,
+    directionLeft: false,
+    brandName: "Netlify",
+  },
+  {
+    id: 14,
+    brand: TbBrandFigma,
+    directionLeft: false,
+    brandName: "Figma",
   },
 ];
