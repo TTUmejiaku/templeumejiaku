@@ -67,11 +67,11 @@ function About({}: Props) {
 
   return (
     <>
-      <Header />
-      <PrimaryNav />
-      {/* About section */}
-      <div className="text-white  text-center">
-        <div className="container">
+      <div className="container">
+        <Header />
+        <PrimaryNav />
+        {/* About section */}
+        <div className="text-white  text-center">
           <p className="mt-8 md:mt-10 mx-auto md:w-4/5">
             I love to build cool stuff with code. I delight in manipulating
             HTML, CSS, and JavaScript to turn designs into functional and
@@ -80,11 +80,9 @@ function About({}: Props) {
             that solve business problems.
           </p>
         </div>
-      </div>
 
-      {/* Work, skills section */}
-      <main className="mt-20 md:mt-28">
-        <div className="container">
+        {/* Work, skills section */}
+        <main className="mt-20 md:mt-28">
           {/* Work section */}
           <section className="text-center py-4">
             <div className="title__logo">
@@ -114,8 +112,8 @@ function About({}: Props) {
           <section id="contact">
             <ContactMe />
           </section>
-        </div>
-      </main>
+        </main>
+      </div>
     </>
   );
 }
