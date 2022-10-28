@@ -72,7 +72,7 @@ function About({}: Props) {
       {/* About section */}
       <div className="text-white  text-center">
         <div className="container">
-          <p className="mt-8 md:mt-10 w-4/5 mx-auto">
+          <p className="mt-8 md:mt-10 mx-auto md:w-4/5">
             I love to build cool stuff with code. I delight in manipulating
             HTML, CSS, and JavaScript to turn designs into functional and
             user-friendly web applications. I am currently looking for a
@@ -109,13 +109,13 @@ function About({}: Props) {
               {skillsLists}
             </div>
           </section>
+
+          {/* Contact me */}
+          <section id="contact">
+            <ContactMe />
+          </section>
         </div>
       </main>
-
-      {/* Contact me */}
-      <section id="contact">
-        <ContactMe />
-      </section>
     </>
   );
 }

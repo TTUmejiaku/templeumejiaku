@@ -11,7 +11,7 @@ function Skill({ directionLeft, brandLogo: BrandLogo, brandName }: Props) {
   return (
     <div className="group relative flex cursor-pointer border border-gray-500 rounded-xl overflow-hidden">
       <motion.div
-        initial={{ x: directionLeft ? -100 : 100, opacity: 0 }}
+        initial={{ x: directionLeft ? -50 : 50, opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}

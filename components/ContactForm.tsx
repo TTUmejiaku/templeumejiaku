@@ -17,11 +17,11 @@ function ContactForm({}: Props) {
   };
 
   return (
-    <div className="mt-12 container text-center">
-      <div className="space-y-10 w-full">
+    <div className="mt-12 text-center">
+      <div className="space-y-10 ">
         <form
           onSubmit={handleSubmit(onSubmit)}
-          className="flex flex-col space-y-2 mx-auto md:w-fit"
+          className="flex flex-col space-y-2 md:w-fit"
         >
           <div className="flex flex-col space-y-2 md:space-y-0 md:flex-row md:space-x-2">
             <input

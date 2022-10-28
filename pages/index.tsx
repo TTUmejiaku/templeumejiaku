@@ -20,8 +20,8 @@ function index({}: Props) {
             Contact Me
           </h3>
           <div className="divider"></div>
+          <ContactForm />
         </div>
-        <ContactForm />
       </section>
     </div>
   );
