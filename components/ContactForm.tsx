@@ -100,7 +100,7 @@ function ContactForm({}: Props) {
           <ReCAPTCHA
             ref={recaptchaRef}
             size="invisible"
-            sitekey={process.env.NEXT_PUBLIC_SITE_KEY_DEV}
+            sitekey={process.env.NEXT_PUBLIC_SITE_KEY}
           />
           <button className="bg-priYellow py-5 px-10 rounded-md text-black font-bold text-lg">
             Submit
