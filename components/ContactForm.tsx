@@ -41,8 +41,7 @@ function ContactForm({}: Props) {
           );
         },
         (error) => {
-          setErrorMessage(`Sending message unsuccessful, try again`);
-          console.log(error);
+          setErrorMessage(error.text);
         }
       );
   };

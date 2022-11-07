@@ -23,15 +23,6 @@ function index({}: Props) {
           <ContactForm />
         </section>
       </div>
-      {/* <section id="contact">
-        <div className="mt-28 container text-center">
-          <h3 className="uppercase tracking-[16px] text-priYellow text-small">
-            Contact Me
-          </h3>
-          <div className="divider"></div>
-          <ContactForm />
-        </div>
-      </section> */}
     </>
   );
 }
